@@ -11,16 +11,10 @@
 
 <script>
 export default {
+  props:['ninjas'],
   data () {
     return {
-      ninjas: [
-        {name:'vikash1', speciality:'He is a Batsman', show:'false'},
-        {name:'vikash2', speciality:'He is a bowler2', show:'false'},
-        {name:'vikash3', speciality:'He is a bowler', show:'false'},
-        {name:'vikash4', speciality:'He is a bowler', show:'false'},
-        {name:'vikash5', speciality:'He is a bowler', show:'false'},
-        {name:'vikash6', speciality:'He is a bowler', show:'false'},        
-      ]
+
     }
   }
 }

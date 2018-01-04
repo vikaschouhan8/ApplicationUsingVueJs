@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-header></app-header>
-    <app-ninjas></app-ninjas>
+    <app-ninjas :ninjas="ninjas"></app-ninjas>
     <app-footer></app-footer>
   </div>
 </template>
@@ -19,7 +19,14 @@ export default {
   },
   data () {
     return {
-      title: 'Ninja App'
+      ninjas: [
+        {name:'vikash1', speciality:'He is a Batsman', show:'false'},
+        {name:'vikash2', speciality:'He is a bowler2', show:'false'},
+        {name:'vikash3', speciality:'He is a bowler', show:'false'},
+        {name:'vikash4', speciality:'He is a bowler', show:'false'},
+        {name:'vikash5', speciality:'He is a bowler', show:'false'},
+        {name:'vikash6', speciality:'He is a bowler', show:'false'},        
+      ]
     }
   }
 }
