@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header :title="title"></app-header>
     <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <app-footer></app-footer>
+    <app-footer :title="title"></app-footer>
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
         {name:'vikash4', speciality:'He is a bowler', show:'false'},
         {name:'vikash5', speciality:'He is a bowler', show:'false'},
         {name:'vikash6', speciality:'He is a bowler', show:'false'},        
-      ]
+      ],
+      title: 'Vikas VueJs App'
     }
   }
 }

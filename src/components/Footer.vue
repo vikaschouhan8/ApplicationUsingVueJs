@@ -1,14 +1,24 @@
 <template>
     <footer>
-      <p> {{copyright}}</p>
+      <p v-on:click="changeName()"> {{copyright}} {{title}}</p>
     </footer>
 </template>
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String
+    }
+  },
   data () {
     return {
       copyright: 'Copyright 2018 Walkover'
+    }
+  },
+  methods: {
+    changeName: function() {
+      this.title = "New VueJs title"
     }
   }
 }

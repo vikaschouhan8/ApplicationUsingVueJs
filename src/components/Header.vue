@@ -6,9 +6,12 @@
 
 <script>
 export default {
+  props: {
+    title: String
+  },
   data () {
     return {
-      title: 'Ninja App'
+      
     }
   }
 }
